@@ -1,0 +1,30 @@
+\begin{table}
+
+\caption{\label{tab:tab:task1_regression}Time-Series Regression of Sovereign Yields on MPS and Debt}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{llrrrr}
+\toprule
+Country & Variable & Estimate & Std. Error & t-stat & p-value\\
+\midrule
+ & Intercept & 8.684 & 0.977 & 8.892 & 0.000\\
+\cmidrule{2-6}
+ & MPS Shock (OIS 2Y) & -0.013 & 0.021 & -0.598 & 0.550\\
+\cmidrule{2-6}
+\multirow[t]{-3}{*}{\raggedright\arraybackslash DE} & Govt Debt/GDP & -9.010 & 1.445 & -6.236 & 0.000\\
+\cmidrule{1-6}
+ & Intercept & 6.259 & 0.217 & 28.905 & 0.000\\
+\cmidrule{2-6}
+ & MPS Shock (OIS 2Y) & -0.002 & 0.016 & -0.136 & 0.892\\
+\cmidrule{2-6}
+\multirow[t]{-3}{*}{\raggedright\arraybackslash ES} & Govt Debt/GDP & -3.614 & 0.277 & -13.042 & 0.000\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item \textit{Notes: } 
+\item Specification: $Y_{c,t+1} = beta MPS_t + gamma X_{c,t} + epsilon_{c,t}$.
+\item Sample: Monthly obs for Germany (DE) and Spain (ES).
+\item Data: Winsorized at 1st/99th percentiles.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
